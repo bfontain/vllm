@@ -73,7 +73,7 @@ class Detokenizer:
                     # Use the offsets & prev tokens corresponding to
                     # real tokens to ensure detokenization is consistent
                     # actual with prompt.
-                    if token_id == all_token_ids[token_position]:
+                    if token_id == all_token_ids[token_position+1]:
                         next_iter_prefix_offset = new_prefix_offset
                         next_iter_read_offset = new_read_offset
                         next_iter_tokens = new_tokens
